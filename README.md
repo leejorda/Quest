@@ -1,8 +1,9 @@
 #Quest
 
-**Description** Quest is a mobile application developed for iOS using xCode and Swift. Players can open a series of doors, which will reveal either an alien room, or treasure room, reducing their health points or obtaining treasure respectively. Players can register and login using Firebase authentication, and statistics are tracked using Firestore.
+## Description
+Quest is a mobile application developed for iOS using xCode and Swift. Players can open a series of doors, which will reveal either an alien room, or treasure room, reducing their health points or obtaining treasure respectively. Players can register and login using Firebase authentication, and statistics are tracked using Firestore.
 
-##Technologies used
+## Technologies used
 - Swift/SwiftUI
 - Firebase (Authentication and Storage)
 
@@ -14,8 +15,9 @@
 - Follows Model-View-Controller (MVC) architectural principles for code organization and maintainability
 
 ## Running the project
-To run this project on your machine, please follow these steps. 
+To run this project, please follow these steps.
 Note: You must install xCode on a Macbook in addition to having a Firebase account prior to starting
+
 1. **Clone Repository**
    - Clone this repository to your machine
      

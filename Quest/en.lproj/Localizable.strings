@@ -1,0 +1,28 @@
+/* 
+  Localizable.strings
+  Quest
+
+  Created by Jordan Lee on 2023-04-18.
+  
+*/
+
+"Login" = "Login";
+"Register" = "Register";
+"Play" = "Play";
+"Statistics" = "Statistics";
+"Sign out" = "Sign out";
+"Email" = "Email";
+"Password" = "Password";
+"emptyAlert" = "Empty Fields";
+"emptyAlertDetails" = "Please fill in all fields";
+"invalidAlert" = "Invalid Fields";
+"Cancel" = "Cancel";
+"highscore" = "Highscore: ";
+"totalGold" = "Total gold collected: ";
+"totalPlayed" = "Total games played: ";
+"gamesWon" = "Games Won: ";
+"gamesLost" = "Games Lost: ";
+"returnMainMenu" = "Return to main menu";
+"attacked" = "You were attacked by a monster";
+"tapContinue" = "Tap to continue";
+"enterRoom" = "You entered the room";

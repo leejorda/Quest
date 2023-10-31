@@ -1,4 +1,4 @@
-#Quest
+# Quest
 
 ## Description
 Quest is a mobile application developed for iOS using xCode and Swift. Players can open a series of doors, which will reveal either an alien room, or treasure room, reducing their health points or obtaining treasure respectively. Players can register and login using Firebase authentication, and statistics are tracked using Firestore.

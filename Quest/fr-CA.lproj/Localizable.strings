@@ -17,11 +17,12 @@
 "emptyAlertDetails" = "Veuillez remplir tous les champs";
 "invalidAlert" = "Champs invalides";
 "Cancel" = "Annuler";
-"highscore" = "Meilleur score: ";
-"totalGold" = "Total d'or collecté: ";
+"highscore" = "Meilleur score";
+"totalScore" = "Score total";
+"totalGold" = "Total d'or collecté";
 "totalPlayed" = "Total des parties jouées: ";
-"gamesWon" = "Nombre de victoires: ";
-"gamesLost" = "Nombre de défaites: ";
+"gamesWon" = "Nombre de victoires";
+"gamesLost" = "Nombre de défaites";
 "returnMainMenu" = "Revenir au menu principal";
 "attacked" = "Vous avez été attaqué par un monstre";
 "tapContinue" = "Touchez pour continuer";

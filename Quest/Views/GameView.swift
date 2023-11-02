@@ -30,6 +30,7 @@ struct GameView: View {
             VStack {
                 Text("Quest")
                     .font(.largeTitle)
+                    .fontWeight(.bold)
                     .padding()
                 HStack {
                     VStack {
@@ -44,6 +45,7 @@ struct GameView: View {
                     HStack {
                         ForEach(gameController.rooms, id: \.id) { r in
                             RoomView(room: r, selectedLanguage: selectedLanguage)
+                                .cornerRadius(10)
                         }
                         .padding(5)
                     }

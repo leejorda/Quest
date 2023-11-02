@@ -19,7 +19,7 @@ struct HomeView: View {
         }
         else {
             VStack {
-                Text("Questy")
+                Text("Quest")
                     .font(.largeTitle)
                     .fontWeight(.bold)
                 Spacer()

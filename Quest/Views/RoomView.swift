@@ -17,45 +17,56 @@ struct RoomView: View {
             if (!room.isOpen) {
                 NavigationLink (destination: OpenRoomView(roomNum: room.roomNumber, selectedLanguage: selectedLanguage).navigationBarBackButtonHidden(true)) {
                     Text("Enter")
-                        .frame(minWidth: 100)
+                        .frame(width: 100)
+                        .fontWeight(.bold)
+                        .foregroundColor(.white)
                         .padding()
-                        .font(.bold(.title)())
                 }
-                .accentColor(.white)
                 .background(Color.accentColor)
                 .cornerRadius(10)
             }
             else {
                 if (room.isTreasure) {
+                    ZStack {
+                        Color.yellow
+                    }
                     VStack {
                         Text("Collected \(room.moneyValue) Gold!")
                             .foregroundColor(.white)
-                            .frame(minWidth: 100)
+                            .fontWeight(.bold)
+                            .frame(width: 100)
                             .padding()
                     }
-                    .background(Color.yellow)
-                    .cornerRadius(20)
-                    .opacity(1)
+                    .background(Color("darkGray"))
+                    .cornerRadius(15)
+                    .padding()
                 }
                 else {
+                    ZStack {
+                        Color.red
+                    }
                     VStack {
                         Text("Took \(room.damageValue) damage")
                             .foregroundColor(.white)
-                            .frame(minWidth: 100)
+                            .fontWeight(.bold)
+                            .frame(width: 100)
                             .padding()
                     }
-                    .background(Color.red)
-                    .cornerRadius(20)
-                    .opacity(1)
+                    .background(Color("darkGray"))
+                    .cornerRadius(15)
+                    .padding()
                 }
             }
         }
-        .frame(width: UIScreen.main.bounds.width * 0.98)
-        .frame(minHeight: 550)
+        .frame(width: UIScreen.main.bounds.width * 0.98, height: 550)
         .overlay (
             RoundedRectangle(cornerRadius: 10)
                 .stroke(.black, lineWidth: 1)
-                .background(LinearGradient(gradient: Gradient(colors: [.white, .pink, .red, .gray]), startPoint: .topLeading, endPoint: .bottom).opacity(room.isOpen ? 0.3 : 0))
+                .background(LinearGradient(gradient: Gradient(
+                    colors: [.white, .gray, .black]),
+                    startPoint: .topLeading,
+                    endPoint: .bottom)
+                .opacity(room.isOpen ? 0.3 : 0))
         )
         .environment(\.locale, selectedLanguage)
     }

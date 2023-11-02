@@ -17,11 +17,12 @@
 "emptyAlertDetails" = "Please fill in all fields";
 "invalidAlert" = "Invalid Fields";
 "Cancel" = "Cancel";
-"highscore" = "Highscore: ";
-"totalGold" = "Total gold collected: ";
-"totalPlayed" = "Total games played: ";
-"gamesWon" = "Games Won: ";
-"gamesLost" = "Games Lost: ";
+"highscore" = "Highscore";
+"totalScore" = "Total Score";
+"totalGold" = "Total gold collected";
+"totalPlayed" = "Total games played";
+"gamesWon" = "Games Won";
+"gamesLost" = "Games Lost";
 "returnMainMenu" = "Return to main menu";
 "attacked" = "You were attacked by a monster";
 "tapContinue" = "Tap to continue";

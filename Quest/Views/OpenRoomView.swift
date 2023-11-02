@@ -20,7 +20,7 @@ struct OpenRoomView: View {
     var body: some View {
         VStack {
             Text("enterRoom")
-                .font(.callout)
+                .fontWeight(.bold)
             
             //Treasure room
             if (gameController.rooms[roomNum].isTreasure) {

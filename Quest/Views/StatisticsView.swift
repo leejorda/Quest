@@ -18,48 +18,91 @@ struct StatisticsView: View {
         VStack {
             Text("Quest")
                 .font(.largeTitle)
-                .fontWeight(.bold)
             Spacer()
-            VStack {
-                HStack {
-                    Text(LocalizedStringKey("highscore"))
+            HStack {
+                Spacer()
+                
+                VStack {
                     Text(String(fc.currentUserStats.highscore))
-                }
-                .font(.headline)
-                HStack {
+                        .font(.system(size: 36))
                     Text(LocalizedStringKey("highscore"))
-                    Text(String(fc.currentUserStats.totalScore))
                 }
-                .font(.subheadline)
+                .frame(width: 125)
+                .padding()
+                .background(Color("darkGray"))
+                .foregroundColor(.white)
+                .cornerRadius(20)
+                
+                Spacer()
+                
+                VStack {
+                    Text(String(fc.currentUserStats.totalScore))
+                        .font(.system(size: 36))
+                    Text(LocalizedStringKey("totalScore"))
+                }
+                .frame(width: 125)
+                .padding()
+                .background(Color("darkGray"))
+                .cornerRadius(20)
                 .foregroundColor(.yellow)
+                
+                Spacer()
             }
             .padding()
-            VStack {
-                HStack {
-                    Text(LocalizedStringKey("totalPlayed"))
-                    Text(String(fc.currentUserStats.totalGames))
-                }
-                .font(.headline)
-                HStack {
-                    Text(LocalizedStringKey("gamesWon"))
+            
+            HStack {
+                Spacer()
+                VStack (alignment: .center){
                     Text(String(fc.currentUserStats.gamesWon))
+                        .font(.system(size: 36))
+                    Text(LocalizedStringKey("gamesWon"))
                 }
+                .frame(width: 125)
                 .foregroundColor(.green)
-                .font(.subheadline)
-                HStack {
-                    Text(LocalizedStringKey("gamesLost"))
+                .padding()
+                .background(Color("darkGray"))
+                .cornerRadius(20)
+                
+                Spacer()
+                
+                VStack (alignment: .center){
                     Text(String(fc.currentUserStats.gamesLost))
+                        .font(.system(size: 36))
+                    Text(LocalizedStringKey("gamesLost"))
                 }
+                .frame(width: 125)
+                .padding()
+                .background(Color("darkGray"))
+                .cornerRadius(20)
                 .foregroundColor(.red)
-                .font(.subheadline)
+                
+                Spacer()
             }
+            
+            HStack {
+                VStack (alignment: .center) {
+                    Text(String(fc.currentUserStats.totalGames))
+                        .font(.system(size: 36))
+                    Text(LocalizedStringKey("totalPlayed"))
+                        .font(.system(size: 20))
+                }
+                .padding()
+                .background(Color("darkGray"))
+                .foregroundColor(.white)
+                .cornerRadius(20)
+            }
+            .padding()
+            .multilineTextAlignment(.center)
+            
             Spacer()
+            
             Text("Back")
                 .foregroundColor(.accentColor)
                 .onTapGesture {
                     self.pMode.wrappedValue.dismiss()
                 }
         }
+        .fontWeight(.bold)
         .environment(\.locale, selectedLanguage)
     }
     

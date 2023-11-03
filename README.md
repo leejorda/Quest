@@ -15,7 +15,8 @@ Quest is a mobile application developed for iOS using xCode and Swift. Players c
 - Follows Model-View-Controller (MVC) architectural principles for code organization and maintainability
 
 ## Demo
-https://github.com/leejorda/Quest/assets/59710006/8a0487df-ca8b-42ba-8210-8e6fa1f7c05d
+https://github.com/leejorda/Quest/assets/59710006/f97f43e5-bdeb-45b6-b6a6-271dd870feb1
+
 
 ## Running the project
 To run this project, please follow these steps.

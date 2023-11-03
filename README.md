@@ -14,6 +14,9 @@ Quest is a mobile application developed for iOS using xCode and Swift. Players c
 - Localization support for English and French
 - Follows Model-View-Controller (MVC) architectural principles for code organization and maintainability
 
+## Demo
+https://github.com/leejorda/Quest/assets/59710006/8a0487df-ca8b-42ba-8210-8e6fa1f7c05d
+
 ## Running the project
 To run this project, please follow these steps.
 Note: You must install xCode on a Macbook in addition to having a Firebase account prior to starting
